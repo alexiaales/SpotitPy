@@ -40,7 +40,7 @@ In order to start the CLI version of ColoPy, open a command line terminal, anaco
 Explain what these tests test and why
 
 ```
- python test.py -i 020721_ch2DDX6.lif -o ll -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g3 -d2
+ python ColocPy_CLI.py -i 020721_ch2DDX6.lif -o ll -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g3 -d2
  
 ```
 
