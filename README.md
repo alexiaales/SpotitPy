@@ -39,7 +39,7 @@ In order to start the CLI version of ColoPy, open a command line terminal, anaco
 ```
 ### Parameter setting
 
-The user should define these parameters before running. In case the user doesn't specify all of the parameters the default ones will be used. The default parametershave been set as following: tracking space: 5px , sigma: 2 , percentiles(both) : 90 , ch0: 1, ch1: 2, ch2: 3, noise level:3 and the output files will be called 'result.xlsx/result.pdf' 
+The user should define these parameters before running. In case the user doesn't specify all of the parameters the default ones will be used. The default parameters have been set as following: tracking space: 5px , sigma: 2 , percentiles(both) : 90 , ch0: 1, ch1: 2, ch2: 3, noise level: 3 and the output files will be called 'result.xlsx/result.pdf' 
 
 * -- i < input file>
 * -- o < output file>
