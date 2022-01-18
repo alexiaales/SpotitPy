@@ -61,6 +61,8 @@ The user should define these parameters before running. In case the user doesn't
 ## Using the GUI
 
 Add additional notes about how to deploy this on a live system
+GUI template
+(https://github.com/alexiaales/ll/blob/main/format.PNG "image")
 
 ## Built With
 
