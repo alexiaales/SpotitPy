@@ -52,7 +52,7 @@ The user should define these parameters before running. In case the
 * -- pc2 < 2nd colocalized channel percentile >
 * -- t < tracking space>
 * -- s  < gaussian sigma>
-* -- cho <nucleus channel>
+* -- ch0 <nucleus channel>
 * -- ch1 <1st colocalized channel>
 * -- ch2 <2nd colocalized channel>
 * -- nl <WBNS noise level>
