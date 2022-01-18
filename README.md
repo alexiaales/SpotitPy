@@ -62,9 +62,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Cellpose](https://github.com/MouseLand/cellpose) - A generalist algorithm for cellular segmentation
+* [WBNS](https://github.com/NienhausLabKIT/HuepfelM/tree/master/WBNS/python_script) -  Wavelet-based Background and Noise Subtraction
+* [Trackpy](https://github.com/soft-matter/trackpy) - Python particle tracking toolkit
 
 ## Contributing
 
