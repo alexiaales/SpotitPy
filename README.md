@@ -1,6 +1,6 @@
 # ColocPy
 
-  We present a novel automatic tool for object based colocalization which comes in a simple GUI that requires no programming experience hence rendering it ideal for researchers at all levels. ColocPy allows the user to select the images of interest and perform i) an automated and robust image segmentation for region of interest identification (ROI), ii) contemporary pre-processing manipulations and iii) an in depth analysis of the co-localization between objects in two different channels.  
+  colocPy is  a novel automatic tool for object based colocalization which comes in a simple GUI that requires no programming experience hence rendering it ideal for researchers at all levels. ColocPy allows the user to select the images of interest and perform i) an automated and robust image segmentation for region of interest identification (ROI), ii) contemporary pre-processing manipulations and iii) an in depth analysis of the co-localization between objects in two different channels.  
 	
 
 
@@ -32,8 +32,7 @@ And repeat
 until finished
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
+Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run thsi softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3  Please open an issue if you face any problems.
 ## Running the tests
 
 Explain how to run the automated tests for this system
