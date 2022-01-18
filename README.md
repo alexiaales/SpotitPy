@@ -29,15 +29,14 @@ Linux and Windows are supported for running this code. For running the graphical
 
 ### Prerequisites
  To use this software  you need to have python >= 3.8 .
-```
-*mxnet_mkl
-*pyqtgraph
-*PyQt5
-*numpy (>=1.16.0)
-*numba
-*scipy
-*natsort
-```
+
+* mxnet_mkl
+* pyqtgraph
+* PyQt5
+* numpy (>=1.16.0)
+* numba
+* scipy
+* natsort
 
 
 ## Running ColocPy
