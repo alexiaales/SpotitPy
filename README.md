@@ -43,7 +43,7 @@ In order to start the CLI version of ColoPy, open a command line terminal, anaco
 
 The user should define these parameters before running. In case the 
 
-* -- i <input file>
+* -- i < input file>
 * -- o < output file>
 * -- m < model: cyto/nuclei>
 * -- f < from image>
