@@ -39,20 +39,25 @@ In order to start the CLI version of ColoPy, open a command line terminal, anaco
 ```
  python ColocPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 -d 2 
 ```
-### Parameter explanation
+### Parameter setting
 
-* -- i <input file>
-* -- o <output file>
-* -- m <model: cyto/nuclei>
+The user should define these parameters before running. In case the 
+
+
+* -- i < input file>
+* -- o < output file>
+* -- m < model: cyto/nuclei>
 * -- f < from image>
 * -- u < until image>
 * -- pc1 < 1st colocalized channel percentile >
 * -- pc2 < 2nd colocalized channel percentile >
-* -- t <tracking space>
+* -- t < tracking space>
+* -- s  < gaussian sigma>
+* -- cho <nucleus channel>
+* -- ch1 <1st colocalized channel>
+* -- ch2 <2nd colocalized channel>
+* -- nl <WBNS noise level>
 	
-
-Explain what these tests test and why
-
 
 
 ### And coding style tests
