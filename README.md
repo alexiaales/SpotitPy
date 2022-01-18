@@ -18,13 +18,6 @@ Say what the step will be
 pip install 'package'
 ```
 
-And repeat
-
-```
-until all required packages are installed```
-
-Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run thsi softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3. Internet connection is required for installation. Please open an issue if you face any problems.
-
 
 ### Prerequisites
  To use this software  you need to have python >= 3.8 .
@@ -36,6 +29,10 @@ Linux and Windows are supported for running this code. For running the graphical
 * numba
 * scipy
 * natsort
+
+
+Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run thsi softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3. Internet connection is required for installation. Please open an issue if you face any problems.
+
 
 
 ## Running ColocPy
