@@ -1,7 +1,7 @@
 # ColocPy
 
   ColocPy is  a novel automatic tool for object based colocalization which comes in a simple GUI that requires no programming experience hence rendering it ideal for researchers at all levels. It allows the user to select the images of interest and perform i) an automated and robust image segmentation for region of interest identification (ROI), ii) contemporary pre-processing manipulations and iii) an in depth analysis of the co-localization between objects in two different channels.  
-	
+   Outputs include data visualization, to decide upon appropriate analysis and an excel file with all the quantitative analysis. ColocPy is meant to simplify colocalization analysis for experimentalists, however it can also be simply be used to identify cells and particles in each channel idependently.
 
 
 ## Getting Started
