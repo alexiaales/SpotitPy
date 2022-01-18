@@ -35,14 +35,22 @@ until finished
 Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run thsi softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3  Please open an issue if you face any problems.
 ## Running ColocPy
 In order to start the CLI version of ColoPy, open a command line terminal, anaconda prompt is advised. and then type the following:
-### Break down into end to end tests
+
+```
+ python ColocPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 -d 2
+ 
+```
+### Parameter explanation
+* - i <input file>
+* - o <output file>
+* * - m <model: cyto/nuclei>
+* * -
+* * -
+* * -
 
 Explain what these tests test and why
 
-```
- python ColocPy_CLI.py -i 020721_ch2DDX6.lif -o ll -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g3 -d2
- 
-```
+
 
 ### And coding style tests
 
