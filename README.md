@@ -43,7 +43,6 @@ In order to start the CLI version of ColoPy, open a command line terminal, anaco
 
 The user should define these parameters before running. In case the 
 
-
 * -- i < input file>
 * -- o < output file>
 * -- m < model: cyto/nuclei>
@@ -60,13 +59,6 @@ The user should define these parameters before running. In case the
 	
 
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
