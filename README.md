@@ -66,10 +66,6 @@ Add additional notes about how to deploy this on a live system
 * [WBNS](https://github.com/NienhausLabKIT/HuepfelM/tree/master/WBNS/python_script) -  Wavelet-based Background and Noise Subtraction
 * [Trackpy](https://github.com/soft-matter/trackpy) - Python particle tracking toolkit
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Common issues
 * Images must be in RGB and lif format
 * Images stacks must not overpass 30 stacks 
@@ -77,16 +73,12 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Vivian Kalamara**  - [PurpleBooth](https://github.com/PurpleBooth)
-* **Pantelis Topalis** - [PurpleBooth](https://github.com/PurpleBooth)
-* **George Garinis**  - [PurpleBooth](https://github.com/PurpleBooth)
+* **Vivian Kalamara**  - [PhD candidate](https://github.com/PurpleBooth)
+* **Pantelis Topalis** - [Researcher](https://github.com/PurpleBooth)
+* **George Garinis**  - [Professor](https://github.com/PurpleBooth)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
