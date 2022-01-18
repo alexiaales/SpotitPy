@@ -9,9 +9,7 @@
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-
-What things you need to install the software and how to install them
-
+ To use this software  you need to have python >= 3.8 .
 ```
 Give examples
 ```
@@ -32,7 +30,7 @@ And repeat
 until finished
 ```
 
-Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run thsi softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3  Please open an issue if you face any problems.
+Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run thsi softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3. Internet connection is required for installation. Please open an issue if you face any problems.
 ## Running ColocPy
 In order to start the CLI version of ColoPy, open a command line terminal, anaconda prompt is advised. and then type the following:
 
@@ -60,7 +58,7 @@ The user should define these parameters before running. In case the
 
 
 
-## Deployment
+## Using the GUI
 
 Add additional notes about how to deploy this on a live system
 
