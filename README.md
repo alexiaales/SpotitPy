@@ -56,8 +56,6 @@ The user should define these parameters before running. In case the
 * -- nl < WBNS noise level>
 	
 
-
-
 ## Using the GUI
 
 Add additional notes about how to deploy this on a live system
@@ -72,17 +70,16 @@ Add additional notes about how to deploy this on a live system
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## Common issues
+* Images must be in RGB and lif format
+* Images stacks must not overpass 30 stacks 
+* Avoid providing image with great heterogenosity of cells since it might lead to non represenattive results
 
 ## Authors
 
-* **Vivian Kalamara** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Pantelis Topalis** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **George Garinis** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Vivian Kalamara**  - [PurpleBooth](https://github.com/PurpleBooth)
+* **Pantelis Topalis** - [PurpleBooth](https://github.com/PurpleBooth)
+* **George Garinis**  - [PurpleBooth](https://github.com/PurpleBooth)
 
 ## License
 
