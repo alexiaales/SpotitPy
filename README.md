@@ -19,7 +19,7 @@ pip install 'package'
 
 
 ### Prerequisites
- To use this software  you need to have Python >= 3.8 .
+ To use this software  you need to have Python >= 3.8 and all this additional packages:
 
 * mxnet_mkl
 * pyqtgraph
