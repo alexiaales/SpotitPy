@@ -1318,7 +1318,7 @@ def main(argv):
    ch1=int(2)
    ch2=int(3)
    nl=int(3)
-   outputfile=str('anaresult')
+   outputfile=str('result')
    
    try:
       opts, args = getopt.getopt(argv,"hi:o:m:f:u:p:d:t:s:b:g:w:d",["ifile=","ofile=","model=","from=","until=","pc1=","pc2=","trackingsp=","sigma=","ch1=","ch2=","ch0=","nl="])
@@ -1352,7 +1352,7 @@ def main(argv):
          ch1 = arg
       elif opt in ("-g", "--ch2"):
          ch2 = arg  
-      elif opt in ("-D", "--nl"):
+      elif opt in ("-d", "--nl"):
          nl = arg  
     
          
