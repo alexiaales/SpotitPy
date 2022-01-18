@@ -12,7 +12,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
 
 ```
 pip install 'package'
@@ -25,10 +24,18 @@ pip install 'package'
 * mxnet_mkl
 * pyqtgraph
 * PyQt5
-* numpy (>=1.16.0)
+* numpy (>=1.20.0)
 * numba
 * scipy
 * natsort
+* readlif
+* matplotlib
+* pandas
+* read_lif
+* cellpose
+* scikit-image
+* trackpy
+* seaborn
 
 
 Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run thsi softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3. Internet connection is required for installation. Please open an issue if you face any problems.
