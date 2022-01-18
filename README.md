@@ -72,7 +72,7 @@ The user should specify the parameters before running. In case the user doesn't 
 ## Using the GUI
 
 The available GUI version provides more instructions and a page in the documentation here. A brief a summary of the functions provided by the GUI is depicted here:
-GUI template:
+
 ![alt text](https://github.com/alexiaales/ll/blob/main/format2.PNG "image")
 
 ## Built With
