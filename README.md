@@ -37,16 +37,15 @@ Linux and Windows are supported for running this code. For running the graphical
 In order to start the CLI version of ColoPy, open a command line terminal, anaconda prompt is advised. and then type the following:
 
 ```
- python ColocPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 -d 2
- 
+ python ColocPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 -d 2 
 ```
 ### Parameter explanation
-* - i <input file>
-* - o <output file>
-* * - m <model: cyto/nuclei>
-* * -
-* * -
-* * -
+* -- i <input file>
+* -- o <output file>
+* -- m <model: cyto/nuclei>
+*  -
+*  -
+*  -
 
 Explain what these tests test and why
 
