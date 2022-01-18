@@ -43,7 +43,7 @@ In order to start the CLI version of ColoPy, open a command line terminal, anaco
 
 The user should define these parameters before running. In case the 
 
-* -- i < input file>
+* -- i <input file>
 * -- o < output file>
 * -- m < model: cyto/nuclei>
 * -- f < from image>
@@ -52,10 +52,10 @@ The user should define these parameters before running. In case the
 * -- pc2 < 2nd colocalized channel percentile >
 * -- t < tracking space>
 * -- s  < gaussian sigma>
-* -- ch0 <nucleus channel>
+* -- ch0 < nucleus channel>
 * -- ch1 <1st colocalized channel>
 * -- ch2 <2nd colocalized channel>
-* -- nl <WBNS noise level>
+* -- nl < WBNS noise level>
 	
 
 
@@ -82,7 +82,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Vivian Kalamara** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 * **Pantelis Topalis** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **George Garinis** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
