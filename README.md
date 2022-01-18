@@ -8,12 +8,6 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
- To use this software  you need to have python >= 3.8 .
-```
-Give examples
-```
-
 ### Local Installion 
 
 A step by step series of examples that tell you how to get a development env running
@@ -31,6 +25,21 @@ until finished
 ```
 
 Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run thsi softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3. Internet connection is required for installation. Please open an issue if you face any problems.
+
+
+### Prerequisites
+ To use this software  you need to have python >= 3.8 .
+```
+*mxnet_mkl
+*pyqtgraph
+*PyQt5
+*numpy (>=1.16.0)
+*numba
+*scipy
+*natsort
+```
+
+
 ## Running ColocPy
 In order to start the CLI version of ColoPy, open a command line terminal, anaconda prompt is advised. and then type the following:
 
@@ -39,7 +48,7 @@ In order to start the CLI version of ColoPy, open a command line terminal, anaco
 ```
 ### Parameter setting
 
-The user should define these parameters before running. In case the user doesn't specify all of the parameters the default ones will be used. The default parameters have been set as following: tracking space: 5px , sigma: 2 , percentiles(both) : 90 , ch0: 1, ch1: 2, ch2: 3, noise level: 3 and the output files will be called 'result.xlsx/result.pdf' 
+The user should specify the parameters before running. In case the user doesn't specify all of the parameters the default ones will be used. The default parameters have been set as following: tracking space: 5px , sigma: 2 , percentiles(both) : 90 , ch0: 1, ch1: 2, ch2: 3, noise level: 3 and the output files will be called 'result.xlsx/result.pdf' 
 
 | Options | Description |
 | ---| :--------:|
@@ -60,7 +69,7 @@ The user should define these parameters before running. In case the user doesn't
 
 ## Using the GUI
 
-Add additional notes about how to deploy this on a live system
+The available GUI version provides more instructions and a page in the documentation here. A brief a summary of the functions provided by the GUI is depicted here:
 GUI template:
 ![alt text](https://github.com/alexiaales/ll/blob/main/format.PNG "image")
 
