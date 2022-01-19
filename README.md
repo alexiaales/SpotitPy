@@ -38,7 +38,7 @@ pip install 'package'
 * seaborn
 
 
-Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run thsi softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3. Internet connection is required for installation. Please open an issue if you face any problems.
+Linux and Windows are supported for running this code. For running the graphical user interface you will need Windows. At least 8GB of RAM is required to run this softaware. This softaware has been heavily tested on Windows 10 and Ubuntu 20.04.3. Internet connection is required for installation. Please open an issue if you face any problems.
 
 
 
@@ -74,6 +74,21 @@ The user should specify the parameters before running. In case the user doesn't 
 The available GUI version provides more instructions and a page in the documentation here. A brief a summary of the functions provided by the GUI is depicted here:
 
 ![alt text](https://github.com/alexiaales/ll/blob/main/format2.PNG "image")
+
+## Comparison of GUI and CLI 
+
+| Parameter| GUI | CLI|
+| ---| :--------:| :--------:|
+|Input file | yes | yes |
+|Output file | no | yes |
+|Model | yes | yes |
+|Image selection | yes | yes |  
+|Percentile def | yes | yes |
+|Tracking space | no | yes |
+|Gaussian sigma | yes | yes |
+|Channel selection | yes | yes |
+|WBNS noise level | no | yes |
+
 
 ## Built With
 
