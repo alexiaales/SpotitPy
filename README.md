@@ -104,7 +104,6 @@ The available GUI version provides more instructions and a page in the documenta
 ## Authors
 
 * **Vivian Kalamara**  - [PhD candidate](https://github.com/PurpleBooth)
-* **Pantelis Topalis** - [Researcher](https://github.com/PurpleBooth)
 * **George Garinis**  - [Professor](https://github.com/PurpleBooth)
 
 ## License
