@@ -1,13 +1,13 @@
 # ColocPy
 We present a novel automatic tool for object based colocalization which comes in a simple graphical user interface that requires no programming experience hence rendering it ideal for researchers at all levels. ColocPy allows the user to select the images of interest and perform: i) an automated and robust segmentation of the region of interest (ROI), ii) contemporary pre-processing manipulations for de-noising  and iii) an in depth analysis of the co-localization between objects in two different channels.  
 
-## Getting Started
+## Introduction
 
 We have developed a free and open source tool implemented in python which allows an object based colocalization analysis with quantifications. The algorithm per se is implemented in both a user friendly plugin and in a command line version which enables more flexible processing options. This tool is applicable to a large variety of biological objects and provides a novel automated approach to extract quantifiable results of object based colocalization analysis while incorporating algorithms for background and noise suppression. The software generates two complementary outputs, one with the quantifications of the selected image and another for visual inspection of the analysis. Together we provide researchers with a user friendly tool that allows to perform a fast, reproducible and robust way of quantifying co-localized particles within a limited time. To illustrates the performance of this software we have applied it on the dataset. 
 
 ### Local Installion 
 
-A step by step series of examples that tell you how to get a development env running
+Steps required in order to get ColocPy running on your PC.
 
 
 ```
