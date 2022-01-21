@@ -1,12 +1,9 @@
 # ColocPy
-
-  ColocPy is  a novel automatic tool for object based colocalization which comes in a simple GUI that requires no programming experience hence rendering it ideal for researchers at all levels. It allows the user to select the images of interest and perform i) an automated and robust image segmentation for region of interest identification (ROI), ii) contemporary pre-processing manipulations and iii) an in depth analysis of the co-localization between objects in two different channels.  
-   Outputs include data visualization, to decide upon appropriate analysis and an excel file with all the quantitative analysis. ColocPy is meant to simplify colocalization analysis for experimentalists, however it can also be simply be used to identify cells and particles in each channel idependently.
-
+We present a novel automatic tool for object based colocalization which comes in a simple graphical user interface that requires no programming experience hence rendering it ideal for researchers at all levels. ColocPy allows the user to select the images of interest and perform: i) an automated and robust segmentation of the region of interest (ROI), ii) contemporary pre-processing manipulations for de-noising  and iii) an in depth analysis of the co-localization between objects in two different channels.  
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+We have developed a free and open source tool implemented in python which allows an object based colocalization analysis with quantifications. The algorithm per se is implemented in both a user friendly plugin and in a command line version which enables more flexible processing options. This tool is applicable to a large variety of biological objects and provides a novel automated approach to extract quantifiable results of object based colocalization analysis while incorporating algorithms for background and noise suppression. The software generates two complementary outputs, one with the quantifications of the selected image and another for visual inspection of the analysis. Together we provide researchers with a user friendly tool that allows to perform a fast, reproducible and robust way of quantifying co-localized particles within a limited time. To illustrates the performance of this software we have applied it on the dataset. 
 
 ### Local Installion 
 
