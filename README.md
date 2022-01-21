@@ -95,13 +95,13 @@ The available GUI version provides more instructions and a page in the documenta
 
 ## Common issues
 * Images must be in RGB and lif format
-* Images stacks must not overpass 30 stacks 
+* Images stacks must not exceed 30 stacks 
 * Avoid providing image with great heterogenosity of cells since it might lead to non represenattive results
 
 ## Authors
 
-* **Vivian Kalamara**  - [PhD candidate](https://github.com/PurpleBooth)
-* **George Garinis**  - [Professor](https://github.com/PurpleBooth)
+* **Vivian Kalamara**  - [PhD candidate](https://www.researchgate.net/profile/Vivian-Kalamara)
+* **George Garinis**  - [Professor](https://www.researchgate.net/profile/George-Garinis)
 
 ## License
 
