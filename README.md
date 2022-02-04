@@ -7,7 +7,7 @@ We have developed a free and open source tool implemented in python which allows
 
 ### Local Installion 
 
-Steps required in order to get ColocPy running on your PC.
+Steps required in order to get SpotiPy running on your PC.
 
 
 ```
@@ -39,7 +39,7 @@ Linux and Windows are supported for running this code. For running the graphical
 
 
 
-## Running ColocPy
+## Running SpotiPy
 In order to start the CLI version of SpotiPy, open a command line terminal, anaconda prompt is advised. and then type the following:
 
 ```
