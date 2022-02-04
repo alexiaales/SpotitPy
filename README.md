@@ -100,10 +100,10 @@ The available GUI version provides more instructions and a page in the documenta
 
 ## Authors
 
-* **Vivian Kalamara**  - [](https://www.researchgate.net/profile/Vivian-Kalamara)
-* **Alexia Akalestou-Clocher** -[](https://www.researchgate.net/profile/Alexia-Akalestou)
-* **George Garinis**  - [](https://scholar.google.gr/citations?user=0T6gykoAAAAJ&hl=el&oi=aos)
-* **Pantelis Topalis ** -[](https://scholar.google.gr/citations?user=ignRpHAAAAAJ&hl=el)
+* **Vivian Kalamara**  - [link](https://www.researchgate.net/profile/Vivian-Kalamara)
+* **Alexia Akalestou-Clocher** -[link](https://www.researchgate.net/profile/Alexia-Akalestou)
+* **George Garinis**  - [link](https://scholar.google.gr/citations?user=0T6gykoAAAAJ&hl=el&oi=aos)
+* **Pantelis Topalis ** - [link](https://scholar.google.gr/citations?user=ignRpHAAAAAJ&hl=el)
 
 ## License
 
