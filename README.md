@@ -1,5 +1,5 @@
-# ColocPy
-We present a novel automatic tool for object based colocalization which comes in a simple graphical user interface that requires no programming experience hence rendering it ideal for researchers at all levels. ColocPy allows the user to select the images of interest and perform: i) an automated and robust segmentation of the region of interest (ROI), ii) contemporary pre-processing manipulations for de-noising  and iii) an in depth analysis of the co-localization between objects in two different channels.  
+# SpotiPy
+We present a novel automatic tool for object based colocalization which comes in a simple graphical user interface that requires no programming experience hence rendering it ideal for researchers at all levels. SpotiPy allows the user to select the images of interest and perform: i) an automated and robust segmentation of the region of interest (ROI), ii) contemporary pre-processing manipulations for de-noising  and iii) an in depth analysis of the co-localization between objects in two different channels.  
 
 ## Introduction
 
@@ -40,10 +40,10 @@ Linux and Windows are supported for running this code. For running the graphical
 
 
 ## Running ColocPy
-In order to start the CLI version of ColoPy, open a command line terminal, anaconda prompt is advised. and then type the following:
+In order to start the CLI version of SpotiPy, open a command line terminal, anaconda prompt is advised. and then type the following:
 
 ```
- python ColocPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 -d 2 
+ python SpotiPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 -d 2 
 ```
 ### Parameter setting
 
@@ -100,8 +100,10 @@ The available GUI version provides more instructions and a page in the documenta
 
 ## Authors
 
-* **Vivian Kalamara**  - [PhD candidate](https://www.researchgate.net/profile/Vivian-Kalamara)
-* **George Garinis**  - [Professor](https://www.researchgate.net/profile/George-Garinis)
+* **Vivian Kalamara**  - [](https://www.researchgate.net/profile/Vivian-Kalamara)
+* **Alexia Akalestou-Clocher** -[](https://www.researchgate.net/profile/Alexia-Akalestou)
+* **George Garinis**  - [](https://scholar.google.gr/citations?user=0T6gykoAAAAJ&hl=el&oi=aos)
+* **Pantelis Topalis ** -[](https://scholar.google.gr/citations?user=ignRpHAAAAAJ&hl=el)
 
 ## License
 
