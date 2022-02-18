@@ -1,5 +1,5 @@
-# SpotiPy
-We present a novel automatic tool for object based colocalization which comes in a simple graphical user interface that requires no programming experience hence rendering it ideal for researchers at all levels. SpotiPy allows the user to select the images of interest and perform: i) an automated and robust segmentation of the region of interest (ROI), ii) contemporary pre-processing manipulations for de-noising  and iii) an in depth analysis of the co-localization between objects in two different channels.  
+# SpotitPy
+We present a novel automatic tool for object based colocalization which comes in a simple graphical user interface that requires no programming experience hence rendering it ideal for researchers at all levels. SpotitPy allows the user to select the images of interest and perform: i) an automated and robust segmentation of the region of interest (ROI), ii) contemporary pre-processing manipulations for de-noising  and iii) an in depth analysis of the co-localization between objects in two different channels.  
 
 ## Introduction
 
@@ -7,7 +7,7 @@ We have developed a free and open source tool implemented in python which allows
 
 ### Local Installion 
 
-Steps required in order to get SpotiPy running on your PC.
+Steps required in order to get SpotitPy running on your PC.
 
 
 ```
@@ -39,11 +39,11 @@ Linux and Windows are supported for running this code. For running the graphical
 
 
 
-## Running SpotiPy
-In order to start the CLI version of SpotiPy, open a command line terminal, anaconda prompt is advised. and then type the following:
+## Running SpotitPy
+In order to start the CLI version of SpotitPy, open a command line terminal, anaconda prompt is advised. and then type the following:
 
 ```
- python SpotiPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 -d 2 
+ python SpotitPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 -d 2 
 ```
 ### Parameter setting
 
