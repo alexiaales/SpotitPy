@@ -1,16 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Jan 17 16:52:10 2022
 
-@author: Alexia
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Dec 20 14:52:12 2021
-
-@author: Alexia
-"""
 
 from tkinter import *
 from tkinter import ttk
