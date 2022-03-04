@@ -1,15 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jan 18 11:56:12 2022
 
-@author: Alexia
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 14 16:16:02 2021
-@author: Alexia 
-"""
 from tkinter import *
 from tkinter import ttk
 from tkinter import filedialog
