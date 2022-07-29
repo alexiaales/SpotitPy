@@ -1,4 +1,18 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Thu Jul 28 14:05:24 2022
+
+@author: Alexia
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jul 27 20:06:54 2022
+
+@author: Alexia
+"""
+
+# -*- coding: utf-8 -*-
 
 
 from tkinter import *
@@ -42,6 +56,13 @@ from cellpose import models
 from cellpose import plot
 import sys, getopt  
 
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------
+#                                                                  GLOBAL LISTS
+#---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 image=[]
 number=[]   
 sizes=[]
@@ -60,6 +81,12 @@ clean_div=[]
 use_GPU = models.use_gpu()
 mode = models.Cellpose(gpu=use_GPU, model_type='cyto') 
 pdf_files=[]
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------
+#                                                                  FUNCTIONS
+#---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 def pdf_output(img):    
@@ -87,6 +114,8 @@ def pdf_output2(img):
     pdfs = ['GFG.pdf', '1st Channel stacked.pdf', '2nd Channel stacked.pdf', '3rd Channel stacked.pdf','Masked nucleus.pdf','Masked cytoplasm.pdf','Calculation area.pdf','Filtered channel 2 image.pdf','Filtered channel 3 image.pdf','Identified particles in 2nd channel.pdf','Identified particles in 3rd channel.pdf']
     for f in pdfs:
         os.remove(os.path.join('./', f))
+    
+
     
 def final_merging(counter):
     merger = PdfFileMerger()
@@ -116,6 +145,10 @@ def final_merging(counter):
     for x in pdf_files:
         os.remove(os.path.join('./', x))
     print('Analysis completed')
+
+
+
+
 
 def plot(image,color,plot_title):     
     plt.figure(figsize=(10,10))
@@ -708,10 +741,19 @@ def tracking3(img1,img2,number_of_cells,mask_cyto,image,img):
     f2=f2.assign(frame=frame.values)
     blue_filter_peaks=len(f2.index)/number_of_cells
     
+    
+    if int(float(tracking)) >= int(1):
+        sp2=int(tracking)
+    else :
+        sp=int(particle_size)/2
+        sp1=float(sp)*float(tracking)
+        sp2=sp-sp1
+
+    
     frames=[f1,f2]
     f = pd.concat(frames)
     tracking_space=int(ts)
-    t = tp.link_df(f, int(tracking), memory=2)
+    t = tp.link_df(f, int(sp2), memory=2)
     t1=tp.filter_stubs(t,2)
     number_of_part=t1['particle'].nunique()
     
@@ -729,7 +771,7 @@ def tracking3(img1,img2,number_of_cells,mask_cyto,image,img):
             f1 = tp.locate(removed_mask1,int(particle_size),percentile=int((persentile)))
             frame = pd.Series(np.zeros(len(f1['y'])))
             f1=f1.assign(frame=frame.values)
-            plt.figure(figsize=(10,10))
+        
 
             
             f2 = tp.locate(removed_mask2,int(particle_size),percentile=int((persentile2)))
@@ -743,7 +785,7 @@ def tracking3(img1,img2,number_of_cells,mask_cyto,image,img):
                 frames=[f1,f2]
                 f = pd.concat(frames)
                 tracking_space=int(ts)
-                t = tp.link_df(f, int(tracking), memory=2)
+                t = tp.link_df(f, int(sp2), memory=2)
                 t1=tp.filter_stubs(t,2)
                 if t1['particle'].nunique()==0:
                     zero+=1
@@ -801,10 +843,17 @@ def tracking2(img1,img2,number_of_cells,mask_cyto,image,img):
     f2=f2.assign(frame=frame.values)
     blue_filter_peaks=len(f2.index)/number_of_cells
     
+    
+    if int(float(tracking)) >= int(1):
+        sp2=int(tracking)
+    else :
+        sp=int(particle_size)/2
+        sp1=float(sp)*float(tracking)
+        sp2=sp-sp1    
     frames=[f1,f2]
     f = pd.concat(frames)
     tracking_space=int(ts)
-    t = tp.link_df(f, int(tracking), memory=2)
+    t = tp.link_df(f, int(sp2), memory=2)
     t1=tp.filter_stubs(t,2)
     number_of_part=t1['particle'].nunique()
     
@@ -822,7 +871,6 @@ def tracking2(img1,img2,number_of_cells,mask_cyto,image,img):
             f1 = tp.locate(removed_mask1,int(particle_size),percentile=int((persentile)))
             frame = pd.Series(np.zeros(len(f1['y'])))
             f1=f1.assign(frame=frame.values)
-            plt.figure(figsize=(10,10))
             f=tp.annotate(f1, removed_mask1)
             
             f2 = tp.locate(removed_mask2,int(particle_size),percentile=int((persentile2)))
@@ -836,7 +884,7 @@ def tracking2(img1,img2,number_of_cells,mask_cyto,image,img):
                 frames=[f1,f2]
                 f = pd.concat(frames)
                 tracking_space=int(ts)
-                t = tp.link_df(f, int(tracking), memory=2)
+                t = tp.link_df(f, int(sp2), memory=2)
                 t1=tp.filter_stubs(t,2)
                 if t1['particle'].nunique()==0:
                     zero+=1
@@ -1297,7 +1345,9 @@ def main(argv):
    global model
    global nl
    global outputfile
-   
+   global auto 
+
+ 
  
    sigm=int(2)
    tracking=int(5)
@@ -1308,14 +1358,16 @@ def main(argv):
    ch2=int(3)
    nl=int(3)
    outputfile=str('result')
+  # auto=str('off')
+
    
    try:
-      opts, args = getopt.getopt(argv,"hi:o:m:f:u:p:d:t:s:b:g:w:d",["ifile=","ofile=","model=","from=","until=","pc1=","pc2=","trackingsp=","sigma=","ch1=","ch2=","ch0=","nl="])
+      opts, args = getopt.getopt(argv,"hi:o:m:f:u:p:d:t:s:b:g:w:d:z",["ifile=","ofile=","model=","from=","until=","pc1=","pc2=","trackingsp=","sigma=","ch1=","ch2=","ch0=","nl=","auto="])
    except getopt.GetoptError:
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print ('test.py -i <inputfile> -o <outputfile> -m <cyto/nuclei> -f <from image> -u <until image>  -p <persentile of channel1 >  -d <percentile of channel2 > -t <trackingspace> -s <signa> -w <ch0> -b <ch1> -g <ch2> -d <noise level> / ex: python test.py -i 020721_ch2DDX6.lif -o ll -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g3' )
+         print ('test.py -i <inputfile> -o <outputfile> -m <cyto/nuclei> -f <from image> -u <until image>  -p <persentile of channel1 >  -d <persentile of channel2 > -t <trackingspace> -s <signa> -w <ch0> -b <ch1> -g <ch2> -d <noise level> -z <on/off> / ex: python test.py -i 020721_ch2DDX6.lif -o ll -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -z off' )
          sys.exit()
       elif opt in ("-i", "--ifile"):
          inputfile = arg
@@ -1342,20 +1394,20 @@ def main(argv):
       elif opt in ("-g", "--ch2"):
          ch2 = arg  
       elif opt in ("-d", "--nl"):
-         nl = arg  
-    
-         
+      	 nl = arg  
+      elif opt in ("-z", "--auto"):
+         automode = arg  
+		         
    print ('Input file is :', inputfile)
    print ('Selected model :', model)
    print('Analyze images from: ',fromimage,', until: ',untilimage)
-   print('Persentile of channel 1: ',persentile)
-   print('Persentile of channel 2: ',persentile2)
    print('Sigma: ',sigm)
    print('Nucleus channel is: Channel ', ch0 )
    print('Colocalization channels are: Channels ', ch1 ," and ", ch2)
    print('Trackign space: ', tracking)
    print ('Output file: ', outputfile)
    print('Noise level for WBNS: ', nl)
+   print('Automode is :', automode)
 
    global file
    file = LifFile(str(inputfile))
@@ -1363,41 +1415,51 @@ def main(argv):
    img_list = [i for i in file.get_iter_image()]
    enum=[]
    len(img_list)
-   for i in range(len(img_list)):
-       if i > int(fromimage)-1 and i < int(untilimage)+1:
-           print('Image ',int(i))
-           img=int(i)-1
-           enum.append(i)        
-           img_0 = file.get_image(int(img))
-           img_0.get_frame(z=0, t=0, c=0)
-           frame_list   = [i for i in img_0.get_iter_t(c=0, z=0)] 
-           channel_list = [i for i in img_0.get_iter_c(t=0, z=0)] 
-           z_list_0     = [i for i in img_0.get_iter_z(t=0, c=int(ch0)-1)]
-           z_list_1     = [i for i in img_0.get_iter_z(t=0, c=int(ch1)-1)]
-           z_list_2     = [i for i in img_0.get_iter_z(t=0, c=int(ch2)-1)]            
-           plt.figure(figsize=(10,10))
-           plt.imshow(saturated_images(z_list_0, z_list_2)[0],cmap='Reds')
-           plt.show(block=True)
-    
-    
-           while True:
-               cell_size=input('Define the approximate nucleus size: ')
-               if not cell_size.isnumeric():
-                   print("Sorry, your response is not valid could you please try again!")
-                   continue
-               else:
-                   sizes.append(cell_size)
-                   break      
-           while True:
-               part_sizes=input('Define the approximate  particle size ( odd numbers only ): ')
-               if not part_sizes.isnumeric():
-                   print("Sorry, your response is not valid could you please try again!")
-                   continue
-               else:
-                   particle_sizes.append(part_sizes)
-                   break
-        
+   
+   if  automode == str('on') :
+       global sizes
+       global particle_sizes
+       cell_size=input('Define the approximate nucleus size: ') 
+       sizes=[cell_size]*1000
+       part_sizes=input('Define the approximate  particle size ( odd numbers only ): ')
+       particle_sizes=[part_sizes]*1000 
 
+   else:
+       for i in range(len(img_list)):
+           if i > int(fromimage)-1 and i < int(untilimage)+1:
+               print('Image ',int(i))
+               img=int(i)-1
+               enum.append(i)        
+               img_0 = file.get_image(int(img))
+               img_0.get_frame(z=0, t=0, c=0)
+               frame_list   = [i for i in img_0.get_iter_t(c=0, z=0)] 
+               channel_list = [i for i in img_0.get_iter_c(t=0, z=0)] 
+               z_list_0     = [i for i in img_0.get_iter_z(t=0, c=int(ch0)-1)]
+               z_list_1     = [i for i in img_0.get_iter_z(t=0, c=int(ch1)-1)]
+               z_list_2     = [i for i in img_0.get_iter_z(t=0, c=int(ch2)-1)]            
+               plt.figure(figsize=(10,10))
+               plt.imshow(saturated_images(z_list_0, z_list_2)[0],cmap='Reds')
+               plt.show(block=True)
+    
+               while True:
+                   cell_size=input('Define the approximate nucleus size: ')
+                   if not cell_size.isnumeric():
+                       print("Sorry, your response is not valid could you please try  again!")
+                       continue
+                   else:
+                       sizes.append(cell_size)
+                       break      
+               while True:
+                   part_sizes=input('Define the approximate  particle size ( odd numbers only ): ')
+                   if not part_sizes.isnumeric():
+                       print("Sorry, your response is not valid could you please try   again!")
+                       continue
+                   else:
+                       particle_sizes.append(part_sizes)
+                       break
+
+
+ 
    if model == str('cyto') :             
        image_analysis()
    elif model == str('nuclei'):
