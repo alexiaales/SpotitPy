@@ -43,7 +43,7 @@ Linux and Windows are supported for running this code. For running the graphical
 In order to start the CLI version of SpotitPy, open a command line terminal, anaconda prompt is advised. and then type the following:
 
 ```
- python SpotitPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 -d 2 
+ python SpotitPy_CLI.py -i 020721_ch2DDX6.lif -o results -m cyto -f 2 -u 3 --pc1 90 --pc2 80 -t 5 -s 2 -w 1 -b 2 -g 3 --auto off
 ```
 ### Parameter setting
 
@@ -64,6 +64,7 @@ The user should specify the parameters before running. In case the user doesn't 
 | -- ch1 | 1st colocalized channel |
 | -- ch2 | 2nd colocalized channel |
 | -- nl  |WBNS noise level |
+| -- auto  |Automatic mode |
 	
 
 ## Using the GUI
@@ -85,6 +86,10 @@ The available GUI version provides more instructions and a page in the documenta
 |Gaussian sigma | yes | yes |
 |Channel selection | yes | yes |
 |WBNS noise level | no | yes |
+|Automatic mode | no | yes |
+|Overlap persentage| no | yes |
+
+
 
 
 ## Built With
