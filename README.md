@@ -87,7 +87,7 @@ The available GUI version provides more instructions and a page in the documenta
 |Channel selection | yes | yes |
 |WBNS noise level | no | yes |
 |Automatic mode | no | yes |
-|Overlap persentage| no | yes |
+|Overlap percentage| no | yes |
 
 
 
