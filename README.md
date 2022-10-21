@@ -112,6 +112,6 @@ The available GUI version provides more instructions and a page in the documenta
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GPL v3 - see the [LICENSE.md](LICENSE.md) file for details
 
 
