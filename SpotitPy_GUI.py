@@ -77,7 +77,7 @@ root.geometry("1040x1040+0+0")#
 root.configure(background='#4B637F')
 root.attributes('-alpha',0.98)
 
-my_img = tk.PhotoImage(file = r"C:\Users\Alexia\Desktop\bio2.png") 
+my_img = tk.PhotoImage(file = r".\bio2.png") 
 root.iconphoto(False, my_img)
 
 root2 = Tk()
