@@ -1,20 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 28 14:05:24 2022
-
-@author: Alexia
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jul 27 20:06:54 2022
-
-@author: Alexia
-"""
-
-# -*- coding: utf-8 -*-
-
-
 from tkinter import *
 from tkinter import ttk
 from tkinter import filedialog
